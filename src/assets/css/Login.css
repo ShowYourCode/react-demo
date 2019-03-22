@@ -1,0 +1,23 @@
+.login-container {
+    position: fixed;
+    top: 300px;
+    right: 100px;
+    width: 300px;
+    height: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(55, 184, 189);
+}
+.login-container .login-form {
+    max-width: 300px;
+}
+.login-container .login-form-forgot {
+    float: right;
+}
+.login-container .login-form-button {
+    width: 100%;
+}
+.login-container .login-my-btn {
+    color: blue;
+    cursor: pointer;
+}
