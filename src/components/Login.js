@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from "react-dom"
+// import ReactDOM from "react-dom"
 import { Form, Icon, Input, Button, Checkbox } from 'antd'
 import { BrowserRouter as Router, Redirect } from "react-router-dom"
 import './../assets/css/Login.css'
@@ -73,6 +73,6 @@ class LoginForm extends Component {
 
 const Login = Form.create()(LoginForm);
 
-ReactDOM.render(<Login />, document.getElementById('root'))
+// ReactDOM.render(<Login />, document.getElementById('root'))
 
 export default Login

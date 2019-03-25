@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 import { Layout, Menu, Icon } from 'antd'
@@ -72,13 +72,14 @@ class Home extends Component {
         }
     }
     componentDidMount() {
+        console.log('-----------------------------------')
         this.refs.homeContainer.style.height = document.documentElement.clientHeight + 'px'
         console.log(this.state.defaultItemKey)
     }
     render() {
         return (
             <Router>
-                <div className="home-container" ref="homeContainer">
+                <div className="home-container" id="home-container" ref="homeContainer">
                     <Layout>
                         <Sider
                             trigger={null}
@@ -145,5 +146,5 @@ class Home extends Component {
     }
 }
 
-ReactDOM.render(<Home />, document.getElementById('root'))
+// ReactDOM.render(<Home />, document.getElementById('root'))
 export default Home
